@@ -1,0 +1,13 @@
+.table {
+  padding: 1rem;
+}
+
+.column_id {
+  color: #000;
+  background-color: aquamarine;
+}
+
+.row {
+  color: #000;
+  background-color: aquamarine;
+}

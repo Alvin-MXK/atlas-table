@@ -1,0 +1,8 @@
+.content {
+  display: flex;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.content .box {
+  flex: 1;
+}
