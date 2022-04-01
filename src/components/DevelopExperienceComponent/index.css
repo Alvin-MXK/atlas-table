@@ -6,3 +6,21 @@
 .content .box {
   flex: 1;
 }
+
+.high {
+  color: red;
+  background-color: #f0f0f0;
+  margin-left: 10px;
+}
+
+.medium {
+  color: hsl(51, 91%, 50%);
+  background-color: #f0f0f0;
+  margin-left: 10px;
+}
+
+.low {
+  color: green;
+  background-color: #f0f0f0;
+  margin-left: 10px;
+}

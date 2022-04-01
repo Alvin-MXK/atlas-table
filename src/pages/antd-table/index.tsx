@@ -121,6 +121,7 @@ export function AntdTable() {
   return (
     <Fragment>
       <div className="table">
+        <h3>Overall: 这是一个集成程度中等，扩展性中等的Table组件</h3>
         {selectedRowKeys.length > 0 && (
           <div>已选中id为：{selectedRowKeys.join(",")}数据</div>
         )}
@@ -150,12 +151,12 @@ export function AntdTable() {
       <DevelopExperienceComponent
         develop_low={[
           FeatureList.bulk_selection_and_editing,
-          FeatureList.column_pinning,
           FeatureList.column_sorting,
           FeatureList.customize_style,
-          FeatureList.hover_highlight,
           FeatureList.pagination,
           FeatureList.search_and_filter_within_columns,
+          FeatureList.column_pinning,
+          FeatureList.hover_highlight,
           FeatureList.switch_view_mode,
         ]}
         develop_medium={[FeatureList.inline_editing]}
@@ -163,67 +164,58 @@ export function AntdTable() {
           FeatureList.adjust_column_width,
           FeatureList.arranging_and_customizing_columns,
           FeatureList.customize_group,
-          FeatureList.download,
-          FeatureList.global_search,
           FeatureList.group,
-          FeatureList.show_detail_information_by_sideView,
+          FeatureList.global_search,
           FeatureList.support_keyboard_control,
         ]}
+        develop_hight_cost={["high", "medium", "high", "low", "low", "medium"]}
         develop_experience={
           <>
-            <div>优势</div>
+            <h3>优势</h3>
             <ul>
-              <li>
-                1. 不需要引入新的Table库，在我们项目中已经引入了Ant design
-              </li>
-              <li>2. 社区活跃稳定</li>
-              <li>3. 文档健全，也有很多demo，在网上也能找到很多相关的文档</li>
-              <li>4. TypeScript支持程度高</li>
-              <li>5. 支持我们需要的大多数功能，基础功能基本都支持</li>
-              <li>6. 支持自定义样式</li>
+              <div>
+                1.支持我们需要的大多数功能，支持样式自定义，可快速实现我们需要的大多数功能。
+              </div>
+              <div>
+                2. 从开发成本，扩展性，和设计保持一致性上去考虑，更加均衡
+              </div>
+              <div>
+                3. 在我们项目中已经引入了Ant design，不需要引入新的Table库
+              </div>
+              <div>4. 社区活跃稳定，文档健全，也有很多demo，网上相关文档多</div>
+              <div>5. TypeScript支持程度高</div>
             </ul>
-            <div>不足</div>
+            <h3>劣势</h3>
             <ul>
-              <li>1. 相比较antd pro,有些功能不支持，需要我们再做开发</li>
-              <li>2. 没有React Table灵活，可扩展性高</li>
-              <li>3. 有些功能，在和设计保持一致上，处理会比较麻烦</li>
+              <div>1. 相比较antd pro,有些功能不支持，需要我们再做开发</div>
+              <div>2. 没有React Table灵活，可扩展性高</div>
+              <div>3. 有些功能，在和设计保持一致上，处理会比较麻烦</div>
             </ul>
           </>
         }
-        summary={
-          <div>
-            它符合我们绝大数功能，除却一些和后端依赖性比较高的功能比如，download,global
-            search, 还有一些并非Table组件需要提供的功能，比如Show detail
-            information by SideView，我们需要开发的功能有五个，相比较antd
-            pro只相差一个功能(Arranging and Customizing columns),相比较于React
-            Table，工作量更少，相比较于Antd Pro
-            Table更加灵活，反而言之，不如React Table灵活，不如Antd Pro
-            Table功能强大，但是综合来看，是一个更好的选择。
-          </div>
-        }
       />
-      <ul>
-        <li>
+      {/* <ul>
+        <div>
           <a href="https://ant.design/components/table-cn/#components-table-demo-custom-filter-panel">
             1. search/filter支持自定义
           </a>
-        </li>
-        <li>2. 可以批量选中，会返回相应的数据，编辑功能需要结合使用场景</li>
-        <li>
+        </div>
+        <div>2. 可以批量选中，会返回相应的数据，编辑功能需要结合使用场景</div>
+        <div>
           3.
           自定义样式提供了一些能力，比如控制行样式，列样式，但是对于一些功能，比如filter,search,checkbox，以及固定列这些，需要我们去特殊处理
-        </li>
-        <li>
+        </div>
+        <div>
           <a href="https://blog.csdn.net/Sponge_bob_/article/details/120906278">
             4.调整列宽
           </a>
-        </li>
-        <li>
+        </div>
+        <div>
           <a href="https://ant.design/components/table-cn/#components-table-demo-edit-row">
             5.行内编辑
           </a>
-        </li>
-      </ul>
+        </div>
+      </ul> */}
     </Fragment>
   );
 }
