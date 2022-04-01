@@ -148,29 +148,27 @@ export function AntdTable() {
         />
       </div>
       <DevelopExperienceComponent
-        supported={[
-          FeatureList.pagination,
-          FeatureList.column_sorting,
-          FeatureList.search_and_filter_within_columns,
-          FeatureList.bulk_selection_and_editing,
-          FeatureList.customize_style,
-          FeatureList.column_pinning,
-          FeatureList.switch_view_mode,
-          FeatureList.hover_highlight,
-          FeatureList.inline_editing,
-        ]}
         develop_low={[
+          FeatureList.bulk_selection_and_editing,
+          FeatureList.column_pinning,
+          FeatureList.column_sorting,
+          FeatureList.customize_style,
+          FeatureList.hover_highlight,
+          FeatureList.pagination,
+          FeatureList.search_and_filter_within_columns,
+          FeatureList.switch_view_mode,
+        ]}
+        develop_medium={[FeatureList.inline_editing]}
+        develop_hight={[
+          FeatureList.adjust_column_width,
+          FeatureList.arranging_and_customizing_columns,
+          FeatureList.customize_group,
           FeatureList.download,
           FeatureList.global_search,
-          FeatureList.arranging_and_customizing_columns,
-        ]}
-        develop_medium={[
-          FeatureList.adjust_column_width,
           FeatureList.group,
-          FeatureList.support_keyboard_control,
           FeatureList.show_detail_information_by_sideView,
+          FeatureList.support_keyboard_control,
         ]}
-        develop_hight={[FeatureList.customize_group]}
         develop_experience={
           <>
             <div>优势</div>
