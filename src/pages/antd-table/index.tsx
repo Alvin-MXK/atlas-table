@@ -121,7 +121,7 @@ export function AntdTable() {
   return (
     <Fragment>
       <div className="table">
-        <h3>Overall: 这是一个集成程度中等，扩展性中等的Table组件</h3>
+        <h3>Overall: 这是一个集成程度中等，定制化中等的Table组件</h3>
         {selectedRowKeys.length > 0 && (
           <div>已选中id为：{selectedRowKeys.join(",")}数据</div>
         )}
@@ -168,7 +168,7 @@ export function AntdTable() {
           FeatureList.global_search,
           FeatureList.support_keyboard_control,
         ]}
-        develop_hight_cost={["high", "medium", "high", "low", "low", "medium"]}
+        develop_hight_cost={["high", "medium", "medium", "low", "low", "low"]}
         develop_experience={
           <>
             <h3>优势</h3>
@@ -180,7 +180,8 @@ export function AntdTable() {
                 2. 从开发成本，扩展性，和设计保持一致性上去考虑，更加均衡
               </div>
               <div>
-                3. 在我们项目中已经引入了Ant design，不需要引入新的Table库
+                3. 在我们项目中已经引入了Ant design UI
+                框架，不需要引入新的Table库
               </div>
               <div>4. 社区活跃稳定，文档健全，也有很多demo，网上相关文档多</div>
               <div>5. TypeScript支持程度高</div>
